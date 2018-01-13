@@ -20,7 +20,7 @@ If you want to know more about technical issues of spectrograms and timeseries, 
 ## How to run it?
 1. Run **data_provider.py**. It will download all needed data and convert it to TFRecord format. Both downloading and conversion may take some time, because there are about 4000 tracks (about 3GB in total). 
 2. I attached some pretrained model. In order to try it, just run **infer.py** and type some filenames in console when asked to. Your data should be in *sample_audio* and you should type only filename along with extension, for eg. 'chacha.mp3'.
-3. If you want to train your own model, the run **trainer.py**. You might want to change *model_name* param in order not to overwrite pretrained model.
+3. If you want to train your own model, run **trainer.py**. You might want to change *model_name* param in order not to overwrite pretrained model.
 
 ## Results
 The network achieves a decent 88% accuracy on test set. It was trained for 40 epochs on GeForce 1080Ti. There is still a lot of room for improvements - the network recognizes *Despacito* as samba - I checked! :D
